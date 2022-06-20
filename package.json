@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest"
+    "test": "jest --passWithNoTests",
+    "test:staged": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "@types/jest": "^28.1.2",
     "@types/node": "^18.0.0",
     "git-commit-msg-linter": "^4.1.3",
-    "husky": "^8.0.1",
+    "husky": "^4.3.8",
     "jest": "^28.1.1",
     "lint-staged": "^13.0.2",
     "ts-jest": "^28.0.5",
