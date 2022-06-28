@@ -11,5 +11,6 @@ module.exports = {
   coverageProvider: 'babel',
   testEnvironment: 'node',
   testMatch: ['**/*.spec.ts'],
+  preset: '@shelf/jest-mongodb',
   transform: { '.+\\.ts$': 'ts-jest' }
 }
