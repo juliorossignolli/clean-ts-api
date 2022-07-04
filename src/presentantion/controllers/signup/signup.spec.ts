@@ -18,6 +18,13 @@ const makeFakeRequest = (): HttpRequest => ({
   }
 })
 
+const makeFakeAccount = (): AccountModel => ({
+  id: 'valid_id',
+  name: 'valid_name',
+  email: 'valid_email@email.com',
+  password: 'valid_password'
+})
+
 const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
     isValid (email: string): boolean {
@@ -35,13 +42,6 @@ const makeAddAccount = (): AddAccount => {
   }
   return new AddAccountStub()
 }
-
-const makeFakeAccount = (): AccountModel => ({
-  id: 'valid_id',
-  name: 'valid_name',
-  email: 'valid_email@email.com',
-  password: 'valid_password'
-})
 
 const makeSut = (): SutTypes => {
   const emailValidatorStub = makeEmailValidator()
